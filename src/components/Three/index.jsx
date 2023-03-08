@@ -35,7 +35,7 @@ const Three = () => {
       if (event.keyCode == 32) {
         const timeline = gsap.timeline({ paused: true });
         timeline.to(ballRef.current.position, {
-          y: 4,
+          y: ballRef.current.position.y + 2,
           duration: 1,
           ease: 'power1',
         });
